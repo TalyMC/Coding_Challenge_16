@@ -2,7 +2,7 @@
 const BASE_URL = 'https://www.course-api.com/javascript-store-products';
 
 function fetchProductsThen() {
-    fetch('https://www.course-api.com/javascript-store-products')
+    fetch(BASE_URL)
         .then(response => {
             if (!response.ok) {
                 throw new Error(`STOP STOP ERROR: ${response.status}`);
@@ -19,3 +19,15 @@ function fetchProductsThen() {
         });
 }
 fetchProductsThen();
+
+//Task 3
+async function fetchProductsAsync() {
+    try {
+        const response = await fetch (BASE_URL);
+        const products = await response.json();
+        displayProducts(products);
+    } 
+    catch (error) {
+        handleError (error)
+    }
+};
