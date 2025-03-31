@@ -71,3 +71,5 @@ function handleError(error) {
 };
 
 //Task 6
+fetchProductsThen();
+fetchProductsAsync();
