@@ -1,0 +1,40 @@
+header {
+    background-color:rgb(95, 160, 201);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+body {
+   font-family: Arial, sans-serif;
+   margin: 0; 
+   padding: 0;
+   background-color: #ede5e5;
+}
+
+#product-container {
+    display : flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.product-card {
+border-radius: 10px;
+padding: 15px;
+}
+
+.product-header {
+    font-size: 19px;
+    color: white;
+    align-items: center;
+    text-align: center;
+}
+
+.product-price {
+    font-size: 15px;
+    color: black;
+}
+
+.product-image {
+    max-width: 100%;
+    height: auto;
+}
