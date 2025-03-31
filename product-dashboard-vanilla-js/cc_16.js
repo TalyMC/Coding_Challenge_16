@@ -66,3 +66,8 @@ function displayProducts(products) {
 };
 
 //Task 5
+function handleError(error) {
+    console.error("Error occurred: " + error.message);
+};
+
+//Task 6
